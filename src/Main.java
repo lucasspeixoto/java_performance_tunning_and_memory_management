@@ -1,5 +1,9 @@
+import PerformanceExample1.PrimeNumbers;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+        Integer max = Integer.parseInt(args[0]);
+        primeNumbers.generateNumbers(max);
     }
 }
